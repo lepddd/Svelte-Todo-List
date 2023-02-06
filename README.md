@@ -1,2 +1,2 @@
-# Svelte-Todo-List
-Simple svelte todo list
+# Svelte-TodoList
+Todo list Simples
