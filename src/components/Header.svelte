@@ -10,13 +10,13 @@
 
 <style>
   header {
+    padding: 10px 14px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px 20px 10px 20px;
     width: 320px;
     height: 130px;
-    background-image: url('../assets/fundo.png');
+    background-image: url("../assets/fundo.png");
     background-size: contain;
   }
 </style>

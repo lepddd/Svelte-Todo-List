@@ -4,7 +4,7 @@
   import Header from "./Header.svelte";
   import TaskContainer from "./TaskContainer.svelte";
   import TaskTitle from "./TaskTitle.svelte";
-  
+
   //open and close add new task tab
   let isOpen = false;
 
@@ -13,15 +13,15 @@
   };
 
   const openForm = () => {
-    isOpen = true
-  }
+    isOpen = true;
+  };
 </script>
 
 <div class="container">
   <Header />
   {#if isOpen}
     <TaskTitle title={"Add"} body={"new task"} />
-    <AddNewTask on:close={(e) => closeForm(e)}/>
+    <AddNewTask on:close={(e) => closeForm(e)} />
   {:else}
     <TaskTitle title={"Task"} body={"for today"} />
     <TaskContainer />

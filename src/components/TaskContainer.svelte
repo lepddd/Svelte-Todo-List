@@ -5,7 +5,7 @@
 
 <div class="task-container">
   {#each $store as task, index}
-    <TaskCard {task}/>
+    <TaskCard {task} />
   {/each}
 </div>
 

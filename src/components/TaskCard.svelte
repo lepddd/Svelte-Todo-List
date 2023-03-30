@@ -17,7 +17,7 @@
   <span class="delete-button" on:click={() => store.deleteTask(id)}
     ><Icon
       icon="akar-icons:minus"
-      color="#495057"
+      color="#1e293b"
       width="24"
       height="24"
     /></span
@@ -33,14 +33,14 @@
     margin: 0 auto;
     padding: 6px 10px;
     margin-bottom: 10px;
-    color: #495057;
+    color: #1e293b;
   }
   .check-box {
     position: relative;
     display: inline-block;
     width: 16px;
     height: 16px;
-    border: 2px solid #495057;
+    border: 2px solid #1e293b;
     background-color: white;
     border-radius: 50%;
   }
@@ -52,7 +52,11 @@
     content: "";
     width: 8px;
     height: 8px;
-    background-color: #495057;
+    background-color: #94a3b8;
+  }
+
+  .check-box.active {
+    border: 2px solid #94a3b8;
   }
   .task-name {
     margin: 0 10px;
@@ -62,6 +66,7 @@
   }
   .task-name.active {
     text-decoration: line-through;
+    color: #94a3b8;
   }
   .delete-button {
     display: flex;

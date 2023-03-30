@@ -28,7 +28,7 @@
 
   let currentDay = days[date.getDay()];
 
-  console.log(date.getDate())
+  console.log(date.getDate());
 
   const formateDate = (day) => {
     if (day === 1) return `${day}st`;

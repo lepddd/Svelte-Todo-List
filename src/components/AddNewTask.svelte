@@ -25,25 +25,11 @@
     <span>New task</span>
   </div>
   <div class="btn-container">
-    <button
-      ><Icon
-        icon="ant-design:plus-outlined"
-        color="white"
-        width="20"
-        height="20"
-        rotate={1}
-      />Add</button
+    <button>
+      <Icon icon="ic:round-add-task" color="white" width="20" height="20" />
+      Add</button
     >
-    <button on:click={closeClick}
-      ><Icon
-        class="close-icon"
-        icon="ant-design:plus-outlined"
-        color="white"
-        width="20"
-        height="20"
-        rotate={1}
-      /></button
-    >
+    <button on:click={closeClick}>Cancel</button>
   </div>
 </form>
 
@@ -59,6 +45,7 @@
     left: 10px;
     pointer-events: none;
     color: #adb5bd;
+    transition: 0.2s ease-in-out;
   }
   .input-task:valid ~ span,
   .input-task:focus ~ span {
@@ -70,6 +57,7 @@
     border-radius: 5px;
     transition: 0.2s ease-in-out;
   }
+
   .add-new-container {
     background-color: #fff;
   }
@@ -78,43 +66,49 @@
     border: none;
     width: 300px;
     height: 40px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     border-radius: 5px;
     outline-color: #414345;
   }
   .btn-container {
+    width: 100%;
+    max-width: 300px;
+    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 120px;
-    height: 40px;
-    background: linear-gradient(90deg, #232526 0%, #414345 100%);
-    border-radius: 5px;
   }
   .btn-container > button:first-child {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 6px 10px;
+    color: #f4f4f4;
+    background: linear-gradient(90deg, #d946ef 0%, #9333ea 100%);
     border: none;
-    padding: 10px;
-    color: #fff;
-    font-size: 16px;
-    width: 80px;
-    background-color: transparent;
+    border-radius: 4px;
     cursor: pointer;
   }
+
   .btn-container > button:last-child {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #f4f4f4;
+    padding: 6px 12px;
+    color: #f43f5e;
     border: none;
-    background-color: transparent;
+    border-radius: 4px;
     cursor: pointer;
+    transition: 0.2s color ease-in-out;
   }
-  .btn-container > button:last-child :global(.close-icon) {
-    transform: rotateZ(45deg);
+
+  .btn-container > button:last-child:hover {
+    color: #e11d48;
   }
 </style>

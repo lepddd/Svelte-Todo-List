@@ -4,7 +4,7 @@
 
 <footer>
   <button on:click
-    ><Icon icon="ant-design:plus-outlined" width="19" height="19" />Add new item</button
+    ><Icon icon="ant-design:plus-outlined" width="19" height="19" />Add task</button
   >
 </footer>
 
@@ -23,15 +23,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
+    padding: 6px 12px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 4px;
+    font-size: 1rem;
     color: #fff;
     cursor: pointer;
-    width: 150px;
-    height: 40px;
-    background: linear-gradient(95.41deg, #da22ff 0%, #9733ee 100%);
-    padding: 0 10px;
+    background: linear-gradient(90deg, #d946ef 0%, #9333ea 100%);
+    background-color: #d946ef;
     font-weight: 400;
   }
 </style>
